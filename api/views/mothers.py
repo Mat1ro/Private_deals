@@ -1,5 +1,5 @@
-from app.container import mother_service
-from app.dao.model.mother import MotherSchema
+from api.container import mother_service
+from dao import MotherSchema
 
 from flask_restx import Namespace, Resource
 from flask import request

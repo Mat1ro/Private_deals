@@ -1,7 +1,7 @@
 import jwt
 
 from flask import request, abort
-from app.helpers.constants import PWD_ALGORITHM, PWD_SECRET
+from api.helpers.constants import PWD_ALGORITHM, PWD_SECRET
 
 
 def auth_required(func):
@@ -35,7 +35,7 @@ def admin_required(func):
             print("JWT Decode Exception", e)
             abort(401)
 
-        if role != "admin":
+        if role != "teacher":
             abort(403)
 
         return func(*args, **kwargs)

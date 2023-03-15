@@ -1,5 +1,5 @@
 class Config(object):
-    """config for app"""
+    """config for api"""
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'sqlite:///private_deals.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False

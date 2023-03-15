@@ -1,5 +1,5 @@
-from app.container import father_service
-from app.dao.model.father import FatherSchema
+from api.container import father_service
+from dao import FatherSchema
 
 from flask_restx import Namespace, Resource
 from flask import request

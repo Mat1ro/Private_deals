@@ -1,4 +1,4 @@
-from app.dao.student import StudentDAO
+from dao.student import StudentDAO
 
 
 class StudentService:

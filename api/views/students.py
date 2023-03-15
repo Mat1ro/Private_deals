@@ -1,5 +1,5 @@
-from app.container import student_service
-from app.dao.model.student import StudentSchema
+from api.container import student_service
+from dao import StudentSchema
 
 from flask_restx import Namespace, Resource
 from flask import request
@@ -28,7 +28,7 @@ class StudentsView(Resource):
         """
         data = request.json
         student_service.create(data)
-        return "", 201
+        return '', 201
 
 
 @student_ns.route("/<int:sid>")

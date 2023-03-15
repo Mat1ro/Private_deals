@@ -1,4 +1,4 @@
-from app.dao.mother import MotherDAO
+from dao.mother import MotherDAO
 
 
 class MotherService:

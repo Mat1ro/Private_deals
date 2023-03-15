@@ -1,10 +1,10 @@
 from marshmallow import Schema, fields
-from app.setup_db import db
+from api.setup_db import db
 
 
-class Father(db.Model):
-    """Create table for father"""
-    __tablename__ = 'father'
+class Mother(db.Model):
+    """Create table for mother"""
+    __tablename__ = 'mother'
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=True)
@@ -14,8 +14,9 @@ class Father(db.Model):
     job = db.Column(db.String, nullable=True)
 
 
-class FatherSchema(Schema):
-    """Create schema for father"""
+class MotherSchema(Schema):
+    """Create schema for mother"""
+
     id = fields.Integer()
     name = fields.String()
     surname = fields.String()

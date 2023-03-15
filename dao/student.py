@@ -1,4 +1,4 @@
-from app.dao.model.student import Student
+from dao.model.student import Student
 
 
 class StudentDAO:

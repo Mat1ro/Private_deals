@@ -1,4 +1,4 @@
-from app.dao.model.mother import Mother
+from dao.model.mother import Mother
 
 
 class MotherDAO:

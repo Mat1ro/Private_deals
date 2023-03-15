@@ -1,4 +1,4 @@
-from app.dao.model.father import Father
+from dao.model.father import Father
 
 
 class FatherDAO:
